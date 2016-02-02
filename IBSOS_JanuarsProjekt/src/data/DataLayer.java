@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
+//Jeg har lavet noget nyt :D
 
 public class DataLayer {
 	boolean returner = false;
