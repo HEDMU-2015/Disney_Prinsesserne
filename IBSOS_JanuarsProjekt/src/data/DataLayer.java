@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 //Jeg har lavet noget nyt :D
+// nu er det mig der laver noget
 
 public class DataLayer {
 	boolean returner = false;
