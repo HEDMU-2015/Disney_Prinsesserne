@@ -19,7 +19,7 @@ public class TestConnection {
 		FindingEmployeesFromSkills fs = new FindingEmployeesFromSkills();
 		
 		//fs.getSkillsID("Udvikling, fokus");
-		print = fs.findingEmplyeesFromSkills("Udvikling, fokus");
+		print = fs.findingEmplyeesFromSkills("Udvikling, macro");
 		System.out.println("*****************************************");
 
 		for (int i = 0; i < print.size(); i++) {
