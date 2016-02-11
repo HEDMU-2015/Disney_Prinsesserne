@@ -22,7 +22,7 @@ public class DataLayer {
 	int i = 1;
 
 	// Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-	String url = "jdbc:sqlserver://10.153.246.1:1433;instanceName=SQLExpress;databaseName=IPSOS;user=Elisa;password=12345678";
+	String url = "jdbc:sqlserver://10.153.246.10:1433;instanceName=SQLExpress;databaseName=IPSOS;user=Elisa;password=12345678";
 
 	// Creating a singleton class.
 	private static DataLayer instance = null;
@@ -307,8 +307,6 @@ public class DataLayer {
 		}
 	}
 
-	// TODO Der er problemer med identifikationen når den gamle email = ny
-	// email. Bliver sikkert også et problem ved andre updates
 	public void updateEmployee(String newEmployeeName, String newEmployeeEmail, String newEmployeeDepartment,
 			String oldEmployeeEmail) {
 		try {
@@ -366,8 +364,9 @@ public class DataLayer {
 		}
 	}
 
+	//Søg medtoder 
+	
 	public List<Integer> searchEmployeeFromSkills1(String searchString) {
-		//TODO brug "LIKE" og ? for at få bedre resultater frem for =.
 		try {
 			Connection conn = DriverManager.getConnection(url);
 			Statement statement = conn.createStatement();
@@ -377,7 +376,6 @@ public class DataLayer {
 			idListe = new ArrayList<>();
 			
 			while(resultset.next()) {
-		//		System.out.println("ID fra skills: "+(resultset.getString(1)));
 				skillNumber = Integer.parseInt(resultset.getString(1));
 				idListe.add(skillNumber);
 			}
@@ -514,3 +512,13 @@ public class DataLayer {
 		return resultatListe;
 	}
 }
+
+
+
+
+
+
+
+
+
+

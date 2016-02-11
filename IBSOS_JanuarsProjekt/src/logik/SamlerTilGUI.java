@@ -10,7 +10,7 @@ import data.DataLayer;
 public class SamlerTilGUI {
 public List<String> samlerListe(String employeeEmail, String employeeName, String employeeDepartment) {
 		
-		//skal kalde en metode i datalayer med employeeName
+		
 		
 		List<Integer> skillNumberList = new ArrayList<>();
 		List<String> skillNameList = new ArrayList<>();
@@ -22,12 +22,6 @@ public List<String> samlerListe(String employeeEmail, String employeeName, Strin
 		gatheredEmployeeInformation.add(employeeName);
 		gatheredEmployeeInformation.add(employeeEmail);
 		gatheredEmployeeInformation.add(employeeDepartment);
-		
-	/*	for (int i = 0; i < gatheredEmployeeInformation.size(); i++) {
-			System.out.println("-->"+employeeName);
-			System.out.println("-->"+employeeEmail);
-			System.out.println("-->"+employeeDepartment);
-		}*/
 		
 		for (int i = 0; i < skillNumberList.size(); i++) {
 			
@@ -41,10 +35,10 @@ public List<String> samlerListe(String employeeEmail, String employeeName, Strin
 			}
 		}
 		
-		//System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+
 		for (int i = 0; i < gatheredEmployeeInformation.size(); i++) {
 			
-		//	System.out.println("informationer på medarbejderen: "+gatheredEmployeeInformation.get(i));
+	
 		}
 		return gatheredEmployeeInformation;
 		
