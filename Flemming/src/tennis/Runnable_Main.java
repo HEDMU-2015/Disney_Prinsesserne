@@ -1,6 +1,6 @@
 package tennis;
 
-//kommentar
+//kommentar2
 public class Runnable_Main {
 
 	public static void main(String[] args) {
