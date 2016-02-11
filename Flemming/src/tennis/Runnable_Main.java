@@ -20,7 +20,7 @@ public class Runnable_Main {
 		
 		spiller1.modtagBoldt();
 
-	}
+	}//lave noget
 
 	}
 
